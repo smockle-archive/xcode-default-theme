@@ -1,5 +1,7 @@
 # Xcode Colors
 
+![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/smockle.xcode-default-theme.svg)
+
 | Name           | Hex     | Usage                                                                                       |
 | :------------- | :------ | :------------------------------------------------------------------------------------------ |
 | Black          | #000000 | Plain Text; Cursor                                                                          |
