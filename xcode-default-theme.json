@@ -137,7 +137,7 @@
         "meta.function-call entity.name.function", // foo()
         "text.html entity.name.tag", // <html>
         "meta.tag entity.name.tag", // <jsx>
-        "entity.name.type.module", // React
+        "entity.name.type", // React
         "entity.other.inherited-class", // React.Component
         "support.constant", // JSON
         "support.variable", // process
