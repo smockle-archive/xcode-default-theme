@@ -122,7 +122,8 @@
       "name": "Types",
       "scope": [
         "meta.type", // let foo: IFoo
-        "meta.return.type"
+        "meta.return.type",
+        "entity.name.type" // foo as Element
       ],
       "settings": { "foreground": "#5C2699" }
     },
@@ -137,7 +138,6 @@
         "meta.function-call entity.name.function", // foo()
         "text.html entity.name.tag", // <html>
         "meta.tag entity.name.tag", // <jsx>
-        "entity.name.type", // React
         "entity.other.inherited-class", // React.Component
         "support.constant", // JSON
         "support.variable", // process
