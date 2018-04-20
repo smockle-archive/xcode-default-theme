@@ -18,6 +18,7 @@
 | Brightest Blue | #E8F2FF | Current Line                                                                                |
 | White          | #FFFFFF | Background                                                                                  |
 | Gray           | #CCCCCC | Invisibles                                                                                  |
-|                | #ECECEC | Window Background                                                                           |
+|                | #ECECEC | Status Bar Background                                                                       |
+|                | #F1F1F3 | Window Background                                                                           |
 |                | #242424 | Window Foreground                                                                           |
 |                | #CDCDCD | Window Border                                                                               |
