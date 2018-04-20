@@ -19,6 +19,6 @@
 | White          | #FFFFFF | Background                                                                                  |
 | Gray           | #CCCCCC | Invisibles                                                                                  |
 |                | #ECECEC | Status Bar Background                                                                       |
-|                | #F1F1F3 | Window Background                                                                           |
+|                | #F5F5F5 | Window Background                                                                           |
 |                | #242424 | Window Foreground                                                                           |
 |                | #CDCDCD | Window Border                                                                               |
