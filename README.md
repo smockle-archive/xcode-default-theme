@@ -1,6 +1,6 @@
 # Xcode Colors
 
-![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/smockle.xcode-default-theme.svg)
+[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/smockle.xcode-default-theme.svg)](https://marketplace.visualstudio.com/items?itemName=smockle.xcode-default-theme)
 
 | Name           | Hex     | Usage                                                                                       |
 | :------------- | :------ | :------------------------------------------------------------------------------------------ |
