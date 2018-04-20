@@ -1,24 +1,27 @@
 {
-  "name": "xcode-default-theme",
-  "displayName": "Xcode Default Theme",
-  "description":
-    "Brings the colors of the Xcode 'Default' theme to Visual Studio Code",
-  "categories": ["Themes"],
-  "version": "1.0.0",
-  "publisher": "smockle",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/smockle/xcode-default-theme.git"
-  },
-  "engines": { "vscode": "*" },
-  "contributes": {
-    "themes": [
-      {
-        "id": "Xcode Default Theme",
-        "label": "Xcode Default Theme",
-        "uiTheme": "vs",
-        "path": "./xcode-default-theme.json"
-      }
-    ]
-  }
+    "name": "xcode-default-theme",
+    "displayName": "Xcode Default Theme",
+    "description": "Brings the colors of the Xcode 'Default' theme to Visual Studio Code",
+    "categories": [
+        "Themes"
+    ],
+    "version": "1.0.1",
+    "publisher": "smockle",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/smockle/xcode-default-theme.git"
+    },
+    "engines": {
+        "vscode": "*"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "id": "Xcode Default Theme",
+                "label": "Xcode Default Theme",
+                "uiTheme": "vs",
+                "path": "./xcode-default-theme.json"
+            }
+        ]
+    }
 }
