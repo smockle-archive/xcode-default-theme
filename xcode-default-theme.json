@@ -1,0 +1,155 @@
+{
+	"type": "light",
+	"colors": {
+		"editorLineNumber.foreground": "#A6A6A6",
+		"editorLineNumber.activeForeground": "#242424",
+		"editor.lineHighlightBackground": "#EEF5FE",
+		"statusBar.background": "#ECECEC",
+		"statusBar.noFolderBackground": "#ECECEC",
+		"statusBar.debuggingBackground": "#ECECEC",
+		"editorGroupHeader.tabsBackground": "#ECECEC",
+		"sideBar.background": "#ECECEC",
+		"statusBar.foreground": "#242424",
+		"tab.inactiveForeground": "#242424",
+		"statusBar.border": "#CDCDCD",
+		"sideBar.border": "#CDCDCD",
+		"editorGroup.border": "#CDCDCD",
+		"editorGroupHeader.tabsBorder": "#CDCDCD",
+		"tab.border": "#CDCDCD",
+		"terminal.ansiBlack": "#000000",
+		"terminal.ansiBrightBlack": "#000000",
+		"terminal.ansiRed": "#C41A16",
+		"terminal.ansiBrightRed": "#C41A16",
+		"terminal.ansiGreen": "#007400",
+		"terminal.ansiBrightGreen": "#007400",
+		"terminal.ansiYellow": "#643820",
+		"terminal.ansiBrightYellow": "#643820",
+		"terminal.ansiBlue": "#1C00CF",
+		"terminal.ansiBrightBlue": "#1C00CF",
+		"terminal.ansiMagenta": "#AA0D91",
+		"terminal.ansiBrightMagenta": "#AA0D91",
+		"terminal.ansiCyan": "#3F6E74",
+		"terminal.ansiBrightCyan": "#3F6E74",
+		"terminal.ansiWhite": "#FFFFFF",
+		"terminal.ansiBrightWhite": "#FFFFFF"
+	},
+	"tokenColors": [{
+		"scope": "new.expr entity.name",
+		"settings": { "foreground": "#5C2699" }
+	}, {
+		"name": "Comments",
+    "scope": [
+			"comment", // //
+			"comment storage.type" // /** @class */
+		],
+    "settings": { "foreground": "#007400" }
+	}, {
+		"name": "Decorator",
+    "scope": [
+			"meta.decorator", // @foo
+			"meta.decorator punctuation.decorator",
+			"meta.decorator variable.other.readwrite"
+		],
+    "settings": { "foreground": "#643820" }
+	}, {
+		"name": "Functions",
+		"scope": [
+			"entity.name.function", // foo.x()
+			"support.function" // Object.keys
+		],
+		"settings": { "foreground": "#2E0D6E" }
+	}, {
+		"name": "Keys",
+		"scope": [
+			"meta.tag entity.other.attribute-name", // <x prop="" />
+			"meta.object-literal.key", // { foo: _ }
+			"meta.property-list meta.property-name", // .x { foo: "" }
+			"support.type.property-name", // { foo: "" }
+			"support.type.map.key" // (foo: $x)
+		],
+		"settings": { "foreground": "#2E0D6E" }
+	}, {
+		"name": "Keywords",
+		"scope": [
+			"keyword.control", // import, export, switch, return, as, from, @include, @mixin
+			"keyword.declaration", // import (Swift)
+			"keyword.expressions-and-types", // self
+			"keyword.operator.new", // new
+			"keyword.reserved", // override
+			"keyword.statement", // guard
+			"storage.type", // class, var, const, =>, function
+			"storage.modifier", // private,
+			"constant.language", // true, false
+			"variable.language.this", // this
+			"meta.at-rule entity.other.attribute-name" // @keyframes { from {}; to {} }
+		],
+		"settings": { "foreground": "#AA0D91" }
+	}, {
+		"name": "Operators",
+		"scope": [
+			"storage.type.function.arrow", // =>
+			"meta.template.expression punctuation", // ` ${_._} `
+			"punctuation.separator.key-value",
+			"meta.object-literal.key meta.brace.square" // { [foo]: x }
+		],
+		"settings": { "foreground": "#000000" }
+	}, {
+		"name": "Numbers",
+		"scope": [
+			"constant.numeric",
+			"keyword.other.unit"
+		],
+		"settings": { "foreground": "#1C00CF" }
+	}, {
+		"name": "Strings",
+		"scope": [
+			"string", // "foo"
+			"variable.parameter.url.scss", // url(foo)
+			"markup.heading.markdown", // # Foo
+			"beginning.punctuation.definition.list.markdown" // * foo
+		],
+		"settings": { "foreground": "#C41A16" }
+	}, {
+		"name": "Types",
+		"scope": [
+			"meta.type", // let foo: IFoo
+			"meta.return.type"
+		],
+		"settings": { "foreground": "#5C2699" }
+	}, {
+		"scope": [
+			"meta.block variable.other.readwrite", // var foo; foo
+			"meta.objectliteral variable.other.readwrite",
+			"meta.block variable.other.constant", // const foo; foo
+			"meta.objectliteral variable.other.constant",
+			"meta.block variable.other.object", // PropTypes
+			"meta.objectliteral variable.other.object",
+			"meta.function-call entity.name.function", // foo()
+			"text.html entity.name.tag", // <html>
+			"meta.tag entity.name.tag", // <jsx>
+			"entity.name.type.module", // React
+			"entity.other.inherited-class", // React.Component
+			"support.constant", // JSON
+			"support.variable", // process
+			"support.class", // Object
+			"variable.scss", // $foo
+			"entity.name.function.scss" // @include foo
+		],
+		"settings": { "foreground": "#3F6E74" }
+	}, {
+		"scope": [
+			"meta.import variable.other.readwrite", // import Foo from "foo"
+			"meta.definition.variable variable.other.readwrite", // var foo
+			"meta.definition.variable variable.other.constant", // const foo
+			"support.constant.property-value" // composes: bold from "_"
+		],
+		"settings": { "foreground": "#000000" }
+	}, {
+		"scope": [
+			"variable.other.property", // foo.x.y
+			"variable.other.object.property",
+			"support.variable.property"
+		],
+		"settings": { "foreground": "#5C2699" }
+	}]
+}
