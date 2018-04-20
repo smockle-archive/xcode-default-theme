@@ -70,7 +70,8 @@
         "meta.object-literal.key", // { foo: _ }
         "meta.property-list meta.property-name", // .x { foo: "" }
         "support.type.property-name", // { foo: "" }
-        "support.type.map.key" // (foo: $x)
+        "support.type.map.key", // (foo: $x)
+        "entity.name.tag.yaml" // - foo
       ],
       "settings": { "foreground": "#2E0D6E" }
     },
