@@ -87,6 +87,7 @@
         "storage.type", // class, var, const, =>, function
         "storage.modifier", // private,
         "constant.language", // true, false
+        "variable.language.super", // super()
         "variable.language.this", // this
         "meta.at-rule entity.other.attribute-name" // @keyframes { from {}; to {} }
       ],
