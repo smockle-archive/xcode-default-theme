@@ -1,0 +1,224 @@
+/* Tab Bar Background, Inactive Tab Background */
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .editor-actions,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab.close-button-left {
+  background: linear-gradient(#c8c8c8, #c0c0c0);
+}
+/* Active Tab Background */
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab.close-button-left.active {
+  background: linear-gradient(#dfdfdf, #d2d2d2);
+}
+/* Tab Shrink */
+.monaco-workbench
+  > .part.editor
+  > .content:not(.dragged-over)
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink:not(.dragged)
+  > .tab-label::after {
+  display: none;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink {
+  max-width: none;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink
+  > .monaco-icon-label
+  > .monaco-icon-label-description-container {
+  text-align: center;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+/* Tab Height */
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .editor-actions
+  .action-label,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .title-actions
+  .action-label,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title,
+.monaco-workbench > .part > .title {
+  height: 24px;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab
+  .tab-label
+  a,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .title-label
+  a {
+  font-size: 12px;
+  line-height: 22px;
+}
+/* Tab Border */
+.monaco-workbench
+  > .part.editor
+  > .content.multiple-groups
+  > .one-editor-silo
+  > .container
+  > .title,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title {
+  border-left: 1px solid #a1a1a5;
+  position: relative;
+  left: -1px;
+  width: calc(100% + 1px);
+}
+/* Close Button */
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab.close-button-left {
+  transition: opacity 1s;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title.active
+  .tabs-container
+  > .tab.active
+  > .tab-close
+  .action-label {
+  opacity: 0;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title.active
+  .tabs-container
+  > .tab.active
+  > .tab-close
+  .action-label:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+/* Scrollbar */
+.monaco-shell .monaco-scrollable-element > .scrollbar > .slider {
+  background: #a0a0a0 !important;
+  border-radius: 9px;
+  left: unset !important;
+  right: 2px;
+  transition: width 100ms;
+  width: 7px !important;
+}
+.monaco-shell .monaco-scrollable-element > .scrollbar {
+  border-left: 1px solid white;
+  transition: border-color 100ms;
+}
+.monaco-shell .monaco-scrollable-element > .scrollbar:hover {
+  border-color: #cdcdcd;
+}
+.monaco-shell .monaco-scrollable-element > .scrollbar:hover > .slider {
+  background: #a0a0a0 !important;
+  border-radius: 9px;
+  width: 10px !important;
+}
+/* Sidebar Title */
+.monaco-workbench > .sidebar > .title > .title-label,
+.monaco-workbench > .part > .title > .title-actions .action-label {
+  height: 24px;
+  line-height: 22px;
+}
+.monaco-workbench > .sidebar > .title > .title-label span,
+.monaco-panel-view .panel > .panel-header > .title {
+  font-weight: bold;
+  text-transform: none;
+}
+.monaco-workbench > .part > .composite.title {
+  border-bottom: 1px solid #cdcdcd;
+}
