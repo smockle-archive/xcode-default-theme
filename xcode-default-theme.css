@@ -417,6 +417,11 @@
 .monaco-workbench > .part > .composite.title {
   border-bottom: 1px solid #cdcdcd;
 }
+/* Side Bar Drop Target */
+.monaco-tree .monaco-tree-wrapper.drop-target,
+.monaco-tree .monaco-tree-rows > .monaco-tree-row.drop-target {
+  background-color: rgba(51, 153, 255, 0.18) !important;
+}
 /* Status Bar */
 .monaco-workbench > .part.statusbar {
   background: linear-gradient(#eeecee, #d7d5d7);
