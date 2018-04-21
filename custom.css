@@ -156,10 +156,33 @@
   > .content
   > .one-editor-silo
   > .container
-  > .title
+  > .title.active
   .tabs-container
-  > .tab.close-button-left {
-  transition: opacity 1s;
+  > .tab.active
+  > .tab-close
+  .action-label,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title:not(.active)
+  .tabs-container
+  > .tab:not(.active)
+  > .tab-close
+  .action-label,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title.active
+  .tabs-container
+  > .tab:not(.active)
+  > .tab-close
+  .action-label {
+  opacity: 0;
+  transition: none;
 }
 .monaco-workbench
   > .part.editor
@@ -168,10 +191,40 @@
   > .container
   > .title.active
   .tabs-container
-  > .tab.active
+  > .tab.active:hover
   > .tab-close
   .action-label {
-  opacity: 0;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%234A484A' d='M0 .946L.946 0l3.038 3.038L7.03 0 8 .946 4.954 3.992 8 7.03 7.03 8 3.984 4.962.946 8 0 7.03l3.038-3.038z' fill-rule='evenodd'/%3E%3C/svg%3E")
+      50% no-repeat,
+    linear-gradient(#dddddd, #d4d4d4);
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title:not(.active)
+  .tabs-container
+  > .tab:not(.active):hover
+  > .tab-close
+  .action-label,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title.active
+  .tabs-container
+  > .tab:not(.active):hover
+  > .tab-close
+  .action-label {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%234A484A' d='M0 .946L.946 0l3.038 3.038L7.03 0 8 .946 4.954 3.992 8 7.03 7.03 8 3.984 4.962.946 8 0 7.03l3.038-3.038z' fill-rule='evenodd'/%3E%3C/svg%3E")
+      50% no-repeat,
+    linear-gradient(#c7c7c7, #c1c1c1);
+  opacity: 1;
+  transition: opacity 300ms;
 }
 .monaco-workbench
   > .part.editor
@@ -183,9 +236,149 @@
   > .tab.active
   > .tab-close
   .action-label:hover {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.1);
+  transition: background 300ms;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%234A484A' d='M0 .946L.946 0l3.038 3.038L7.03 0 8 .946 4.954 3.992 8 7.03 7.03 8 3.984 4.962.946 8 0 7.03l3.038-3.038z' fill-rule='evenodd'/%3E%3C/svg%3E")
+      50% no-repeat,
+    linear-gradient(#c1bfc1, #b8b7b8);
   border-radius: 2px;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title:not(.active)
+  .tabs-container
+  > .tab:not(.active)
+  > .tab-close
+  .action-label:hover,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title.active
+  .tabs-container
+  > .tab:not(.active)
+  > .tab-close
+  .action-label:hover {
+  transition: background 300ms;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%234A484A' d='M0 .946L.946 0l3.038 3.038L7.03 0 8 .946 4.954 3.992 8 7.03 7.03 8 3.984 4.962.946 8 0 7.03l3.038-3.038z' fill-rule='evenodd'/%3E%3C/svg%3E")
+      50% no-repeat,
+    linear-gradient(#a7a5a7, #999e99);
+  border-radius: 2px;
+}
+.tab.active .monaco-action-bar.animated .action-item.active {
+  transform: none;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title.active
+  .tabs-container
+  > .tab.active
+  > .tab-close
+  .monaco-action-bar.animated
+  .action-item.active
+  .action-label {
+  transition: background 300ms;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%234A484A' d='M0 .946L.946 0l3.038 3.038L7.03 0 8 .946 4.954 3.992 8 7.03 7.03 8 3.984 4.962.946 8 0 7.03l3.038-3.038z' fill-rule='evenodd'/%3E%3C/svg%3E")
+      50% no-repeat,
+    linear-gradient(#a8a6a8, #9f9e9f);
+  border-radius: 2px;
+}
+.tab:not(.active) .monaco-action-bar.animated .action-item.active {
+  transform: none;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title:not(.active)
+  .tabs-container
+  > .tab:not(.active)
+  > .tab-close
+  .monaco-action-bar.animated
+  .action-item.active
+  .action-label,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title.active
+  .tabs-container
+  > .tab:not(.active)
+  > .tab-close
+  .monaco-action-bar.animated
+  .action-item.active
+  .action-label {
+  transition: background 300ms;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%234A484A' d='M0 .946L.946 0l3.038 3.038L7.03 0 8 .946 4.954 3.992 8 7.03 7.03 8 3.984 4.962.946 8 0 7.03l3.038-3.038z' fill-rule='evenodd'/%3E%3C/svg%3E")
+      50% no-repeat,
+    linear-gradient(#8e8c8e, #808580);
+  border-radius: 2px;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink.close-button-left {
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink
+  > .monaco-icon-label
+  > .monaco-icon-label-description-container {
+  padding-left: 21px;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab
+  .tab-label
+  a {
+  margin-left: -21px;
+}
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab.active
+  > .tab-close,
+.monaco-workbench
+  > .part.editor
+  > .content
+  > .one-editor-silo
+  > .container
+  > .title
+  .tabs-container
+  > .tab:not(.active)
+  > .tab-close {
+  position: absolute;
+  top: 3px;
+  left: 0;
 }
 /* Scrollbar */
 .monaco-shell .monaco-scrollable-element > .scrollbar > .slider {
