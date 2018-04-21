@@ -4,7 +4,7 @@
 
 Brings the colors of the Xcode 'Default' theme to Visual Studio Code
 
-_screenshot_
+![Screenshot](/screenshot.png?raw=true "Screenshot")
 
 ## Installation
 
