@@ -37,12 +37,12 @@
 /* Tab Shrink */
 .monaco-workbench
   > .part.editor
-  > .content:not(.dragged-over)
+  > .content
   > .one-editor-silo
   > .container
   > .title
   .tabs-container
-  > .tab.sizing-shrink:not(.dragged)
+  > .tab.sizing-shrink
   > .tab-label::after {
   display: none;
 }
