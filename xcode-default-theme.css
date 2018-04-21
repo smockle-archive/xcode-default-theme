@@ -417,3 +417,7 @@
 .monaco-workbench > .part > .composite.title {
   border-bottom: 1px solid #cdcdcd;
 }
+/* Status Bar */
+.monaco-workbench > .part.statusbar {
+  background: linear-gradient(#eeecee, #d7d5d7);
+}
