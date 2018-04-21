@@ -121,7 +121,8 @@
         "variable.language.super", // super()
         "variable.language.this", // this
         "text.html entity.name.tag", // <html>
-        "meta.tag entity.name.tag" // <jsx>
+        "meta.tag entity.name.tag", // <jsx>
+        "meta.tag support.class" // <jsx>
       ],
       "settings": { "foreground": "#AA0D91" }
     },
@@ -177,6 +178,7 @@
         "meta.block variable.other.object", // PropTypes
         "meta.objectliteral variable.other.object",
         "meta.function-call entity.name.function", // foo()
+        "entity.name.type.module", // React
         "entity.other.inherited-class", // React.Component
         "support.constant", // JSON
         "support.variable", // process
