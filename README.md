@@ -16,7 +16,7 @@ Brings the colors of the Xcode 'Default' theme to Visual Studio Code
 
 ```JSON
 "vscode_custom_css.imports": [
-  "file:///Users/<username>/.vscode/extensions/xcode-default-theme/xcode-default-theme.css"
+  "file:///Users/<username>/.vscode/extensions/smockle.xcode-default-theme-<version>/xcode-default-theme.css"
 ]
 ```
 
