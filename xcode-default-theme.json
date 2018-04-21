@@ -61,6 +61,11 @@
       "settings": { "foreground": "#643820" }
     },
     {
+      "name": "Doctype",
+      "scope": ["meta.tag.sgml.html"],
+      "settings": { "foreground": "#A6A6A6" }
+    },
+    {
       "name": "Functions",
       "scope": [
         "entity.name.function", // foo.x()
@@ -71,7 +76,6 @@
     {
       "name": "Keys",
       "scope": [
-        "meta.tag entity.other.attribute-name", // <x prop="" />
         "meta.object-literal.key", // { foo: _ }
         "meta.property-list meta.property-name", // .x { foo: "" }
         "support.type.property-name", // { foo: "" }
@@ -94,7 +98,9 @@
         "constant.language", // true, false
         "variable.language.super", // super()
         "variable.language.this", // this
-        "meta.at-rule entity.other.attribute-name" // @keyframes { from {}; to {} }
+        "meta.at-rule entity.other.attribute-name", // @keyframes { from {}; to {} }
+        "text.html entity.name.tag", // <html>
+        "meta.tag entity.name.tag" // <jsx>
       ],
       "settings": { "foreground": "#AA0D91" }
     },
@@ -107,6 +113,10 @@
         "meta.object-literal.key meta.brace.square" // { [foo]: x }
       ],
       "settings": { "foreground": "#000000" }
+    },
+    {
+      "scope": "meta.tag entity.other.attribute-name", // <x prop="" />
+      "settings": { "foreground": "#816927" }
     },
     {
       "name": "Numbers",
@@ -128,7 +138,8 @@
       "scope": [
         "meta.type", // let foo: IFoo
         "meta.return.type",
-        "entity.name.type" // foo as Element
+        "entity.name.type", // foo as Element
+        "support.type.primitive" // foo as any
       ],
       "settings": { "foreground": "#5C2699" }
     },
@@ -141,8 +152,6 @@
         "meta.block variable.other.object", // PropTypes
         "meta.objectliteral variable.other.object",
         "meta.function-call entity.name.function", // foo()
-        "text.html entity.name.tag", // <html>
-        "meta.tag entity.name.tag", // <jsx>
         "entity.other.inherited-class", // React.Component
         "support.constant", // JSON
         "support.variable", // process

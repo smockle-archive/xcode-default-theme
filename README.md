@@ -8,6 +8,7 @@
 | Red            | #C41A16 | Strings                                                                                     |
 | Green          | #007400 | Comments; Documentation Markup; Documentation Markup Keywords                               |
 | Yellow         | #643820 | Preprocessor Statements; Attributes; Project Preprocessor Macros; Other Preprocessor Macros |
+| Bright Yellow  | #816927 | Markup Tags                                                                                 |
 | Blue           | #1C00CF | Characters; Numbers; URLs                                                                   |
 | Magenta        | #AA0D91 | Keywords                                                                                    |
 | Cyan           | #26474B | Project Function and Method Names; Project Constants                                        |
