@@ -197,11 +197,13 @@
   width: 7px !important;
 }
 .monaco-shell .monaco-scrollable-element > .scrollbar {
-  border-left: 1px solid white;
+  border-left: 1px solid transparent;
   transition: border-color 100ms;
+  width: 11px;
 }
 .monaco-shell .monaco-scrollable-element > .scrollbar:hover {
   border-color: #cdcdcd;
+  width: 13px;
 }
 .monaco-shell .monaco-scrollable-element > .scrollbar:hover > .slider {
   background: #a0a0a0 !important;
