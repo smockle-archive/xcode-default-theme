@@ -108,7 +108,8 @@
   > .one-editor-silo
   > .container
   > .title,
-.monaco-workbench > .part > .title {
+.monaco-workbench > .part > .title,
+.monaco-workbench > .part > .title > .title-actions {
   height: 24px;
 }
 .monaco-workbench
@@ -463,4 +464,25 @@
 .monaco-text-button:active {
   background: linear-gradient(#4c98fe, #0664e3);
   border: 1px solid #247eff;
+}
+/* Toolbar alignment */
+.monaco-workbench > .part > .title > .title-actions .start-debug-action-item,
+.monaco-workbench .panel .monaco-action-bar .action-item .monaco-select-box,
+.monaco-action-bar .action-item.markers-panel-action-filter {
+  margin-top: 0 !important;
+  align-self: center;
+}
+.monaco-workbench .panel .monaco-action-bar .action-item.select-container {
+  display: flex;
+}
+.monaco-workbench
+  > .part.panel
+  > .title
+  > .panel-switcher-container
+  > .monaco-action-bar
+  .action-item {
+  padding-top: 3px !important;
+}
+.monaco-workbench > .part.panel.bottom .title {
+  align-items: center;
 }
