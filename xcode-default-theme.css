@@ -435,3 +435,20 @@
 .monaco-editor .view-line {
   padding-top: 1px;
 }
+/* Input Boxes */
+.monaco-shell .synthetic-focus {
+  outline: none !important;
+  outline-offset: 0 !important;
+  box-shadow: 0 0 0 2pt #94c0f1;
+}
+.monaco-inputbox.idle:not(.synthetic-focus) {
+  border: 1px solid #bdbdbd !important;
+}
+.monaco-inputbox.idle.synthetic-focus {
+  border: 1px solid #87b3e4 !important;
+}
+.monaco-inputbox.idle,
+.monaco-inputbox > .wrapper > .input,
+.monaco-editor .find-widget .monaco-inputbox .input {
+  border-radius: 3px !important;
+}
