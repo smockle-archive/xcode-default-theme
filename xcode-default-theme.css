@@ -426,3 +426,12 @@
 .monaco-workbench > .part.statusbar {
   background: linear-gradient(#eeecee, #d7d5d7);
 }
+/* Line Numbers */
+.monaco-editor .margin-view-overlays .line-numbers {
+  font-size: 10.5px;
+  letter-spacing: -0.06em;
+  padding-top: 1px;
+}
+.monaco-editor .view-line {
+  padding-top: 1px;
+}
