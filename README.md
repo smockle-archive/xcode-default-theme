@@ -15,9 +15,27 @@ Brings the colors of the Xcode 'Default' theme to Visual Studio Code
 3.  Add the following lines to your `settings.json`:
 
 ```JSON
-"vscode_custom_css.imports": [
-  "file:///Users/<username>/.vscode/extensions/smockle.xcode-default-theme-<version>/xcode-default-theme.css"
-]
+{
+  "editor.cursorStyle": "line-thin",
+  "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 11,
+  "editor.lineHeight": 16.4,
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "all",
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.lineHeight": 1.25,
+  "workbench.activityBar.visible": false,
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.showIcons": false,
+  "window.nativeTabs": true,
+  "window.titleBarStyle": "native",
+  "vscode_custom_css.imports": [
+    "file:///Users/<username>/.vscode/extensions/smockle.xcode-default-theme-<version>/xcode-default-theme.css"
+  ]
+}
 ```
 
 ## Colors
