@@ -4,22 +4,26 @@
     "editorLineNumber.foreground": "#A6A6A6",
     "editorLineNumber.activeForeground": "#242424",
     "editor.lineHighlightBackground": "#EEF5FE",
+    "activityBar.background": "#ECECEC",
     "statusBar.background": "#ECECEC",
     "statusBar.noFolderBackground": "#ECECEC",
     "statusBar.debuggingBackground": "#ECECEC",
     "editorGroupHeader.tabsBackground": "#F5F5F5",
     "sideBar.background": "#F5F5F5",
     "sideBarSectionHeader.background": "#F5F5F5",
+    "activityBarBadge.background": "#565456",
+    "activityBar.foreground": "#565456",
     "statusBar.foreground": "#565456",
     "sideBarTitle.foreground": "#808080",
     "sideBarSectionHeader.foreground": "#808080",
     "tab.inactiveForeground": "#242424",
     "list.inactiveSelectionBackground": "#CECECE",
+    "activityBar.border": "#CDCDCD",
     "sideBar.border": "#CDCDCD",
     "statusBar.border": "#CDCDCD",
     "editorGroup.border": "#CDCDCD",
-    "editorGroupHeader.tabsBorder": "#A1A1A1",
-    "tab.border": "#959595",
+    "editorGroupHeader.tabsBorder": "#CDCDCD", // #A1A1A1 with custom CSS
+    "tab.border": "#CDCDCD", // #A1A1A1 with custom CSS
     "list.activeSelectionBackground": "#3C93FD",
     "list.focusBackground": "#3C93FD",
     "list.focusForeground": "#FFFFFF",
@@ -80,7 +84,8 @@
       "scope": [
         "meta.decorator", // @foo
         "meta.decorator punctuation.decorator",
-        "meta.decorator variable.other.readwrite"
+        "meta.decorator variable.other.readwrite",
+        "meta.decorator meta.function-call entity.name.function"
       ],
       "settings": { "foreground": "#643820" }
     },
@@ -124,7 +129,8 @@
         "variable.language.this", // this
         "text.html entity.name.tag", // <html>
         "meta.tag entity.name.tag", // <jsx>
-        "meta.tag support.class" // <jsx>
+        "meta.tag support.class", // <jsx>
+        "string.regexp keyword.other" // //g
       ],
       "settings": { "foreground": "#AA0D91" }
     },
@@ -135,12 +141,20 @@
         "meta.template.expression punctuation", // ` ${_._} `
         "string.quoted punctuation.definition.variable", // "${SHELL_FOO}"
         "punctuation.separator.key-value",
-        "meta.object-literal.key meta.brace.square" // { [foo]: x }
+        "meta.object-literal.key meta.brace.square", // { [foo]: x }
+        "meta.template.expression keyword.operator", // ? :
+        "keyword.operator.or.regexp", // /|/
+        "keyword.operator.quantifier", // /*/, /?/, /+/
+        "punctuation.definition.group.regexp", // /()/
+        "punctuation.definition.character-class" // /[]/
       ],
       "settings": { "foreground": "#000000" }
     },
     {
-      "scope": "meta.tag entity.other.attribute-name", // <x prop="" />
+      "scope": [
+        "meta.tag entity.other.attribute-name", // <x prop="" />
+        "constant.character.escape.backslash" // /\//
+      ],
       "settings": { "foreground": "#816927" }
     },
     {
@@ -158,7 +172,9 @@
         "string", // "foo"
         "variable.parameter.url.scss", // url(foo)
         "markup.heading.markdown", // # Foo
-        "beginning.punctuation.definition.list.markdown" // * foo
+        "beginning.punctuation.definition.list.markdown", // * foo
+        "meta.template.expression meta.embedded punctuation.definition.string.begin", // { true ? "foo" : "foo" }
+        "meta.template.expression meta.embedded punctuation.definition.string.end"
       ],
       "settings": { "foreground": "#C41A16" }
     },
