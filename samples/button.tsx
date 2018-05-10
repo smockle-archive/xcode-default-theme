@@ -1,5 +1,6 @@
 import * as React from "react";
 
+@inject("foo")
 class Button extends React.Component {
   render() {
     const classNames = ["button"];
@@ -9,6 +10,11 @@ class Button extends React.Component {
 
 class PrimaryButton extends React.Component {
   render() {
-    return <Button type="button" className="primary-button" />;
+    let _ = /\/path\/to-a\/file\.txt\/?(.*)/;
+    _ = /ab+c/;
+    _ = /[.*+?^${}()|[\]\\]/g;
+    _ = /(\w+)\s(\w+)/;
+    _ = /(?:\d{3}|\(\d{3}\))([-\/\.])\d{3}\1\d{4}/;
+    return <Button data-ternary={`${true ? "foo" : "bar"} already exists.`} data-regexp type="button" className="primary-button" />;
   }
 }
