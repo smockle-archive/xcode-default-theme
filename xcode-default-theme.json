@@ -13,6 +13,8 @@
     "editorWidget.border": "#D9D7D5",
     "editorWidget.resizeBorder": "#D9D7D5",
     "input.border": "#D9D7D5",
+    "notificationCenter.border": "#D9D7D5",
+    "notifications.border": "#D9D7D5",
     "panel.border": "#D9D7D5",
     "sideBar.border": "#D9D7D5",
     "statusBar.border": "#D9D7D5",
