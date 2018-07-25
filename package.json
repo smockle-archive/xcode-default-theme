@@ -1,11 +1,15 @@
 {
     "name": "xcode-default-theme",
     "displayName": "Xcode Default Theme",
-    "description": "Brings the colors of the Xcode 'Default' theme to Visual Studio Code",
+    "description": "Brings the colors of the Xcode 'Default (Dark)' and 'Default (Light)' themes to Visual Studio Code",
     "categories": [
         "Themes"
     ],
+<<<<<<< HEAD
     "version": "1.0.29",
+=======
+    "version": "2.0.0",
+>>>>>>> v2.0 Release. Includes 'Default (Dark)' and 'Default (Light)' (renamed)
     "publisher": "smockle",
     "repository": {
         "type": "git",
@@ -17,10 +21,15 @@
     "contributes": {
         "themes": [
             {
-                "id": "Xcode Default Theme",
-                "label": "Xcode Default Theme",
+                "id": "Xcode Default (Dark)",
+                "label": "Xcode Default (Dark)",
+                "uiTheme": "vs-dark",
+                "path": "./xcode-default-dark-theme.json"
+            }, {
+                "id": "Xcode Default (Light)",
+                "label": "Xcode Default (Light)",
                 "uiTheme": "vs",
-                "path": "./xcode-default-theme.json"
+                "path": "./xcode-default-light-theme.json"
             }
         ]
     }
