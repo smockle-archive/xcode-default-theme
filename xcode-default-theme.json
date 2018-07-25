@@ -79,7 +79,7 @@
         "comment", // //
         "comment storage.type" // /** @class */
       ],
-      "settings": { "foreground": "#007400" }
+      "settings": { "foreground": "#536579" }
     },
     {
       "name": "CSS",
