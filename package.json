@@ -5,7 +5,7 @@
     "categories": [
         "Themes"
     ],
-    "version": "2.0.0",
+    "version": "2.0.1",
     "publisher": "smockle",
     "repository": {
         "type": "git",
@@ -21,7 +21,8 @@
                 "label": "Xcode Default (Dark)",
                 "uiTheme": "vs-dark",
                 "path": "./xcode-default-dark-theme.json"
-            }, {
+            },
+            {
                 "id": "Xcode Default (Light)",
                 "label": "Xcode Default (Light)",
                 "uiTheme": "vs",
