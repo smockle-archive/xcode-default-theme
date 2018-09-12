@@ -1,30 +1,26 @@
 language: node_js
 node_js:
-- '8'
+  - "8"
 notifications:
   email:
     on_success: change
     on_failure: change
 install:
-- npm i -g vsce
+  - npm i -g vsce
 script:
-- vsce package
+  - vsce package
 deploy:
-- provider: script
-  skip_cleanup: true
-  script: bash scripts/version.sh
-  on:
-    branch: master
-    repo: smockle/xcode-default-theme
-    tags: false
-- provider: script
-  skip_cleanup: true
-  script: bash scripts/publish.sh
-  on:
-    branch: master
-    repo: smockle/xcode-default-theme
-    tags: false
-env:
-  global:
-  - secure: O3KiKbF9Vm0wpwISyWrByJq1EAY9STx5IBFy3nckpgI0sw884p0yTAslRyvuoVwhhp75+7DmZeR+2xQob+ozE9id9X9uvXofHIK4p6ePtmPfuVa/DkDOHpWYklUQQ6VaYNuTTQP54cvhyVRxN23SASmWd4nuck7fo3aQQV87g+Sm2v92+QebgJwxMTmJZ3yED12lbzcUd9eFnwZxtq7baJesTbs3l4GRGOrIzSx7OtJTs5NAKXJ/XujXTSb10qYtVi8yxazfjzg3V52XbJ/rftf9VFWneSWMK3Uhs44xF9d3byjck37DhYIjux6i7FnVJLUl0L3hFABswZi5sRHff05FE69aPQgKDZKSrDrjuWsyEFaV6bUJ60wzAHwGdeH7yGbkH7fR+1P/g7cqNRQriAGzTrXY/1756R0VKPGfUcUAfqMRl2RrlIxl1OxkubQ4EwCbykJnw2bRm2SU78TNBXUsnw61IzZeftWDkIktk9aouEBE6FHhZZhZ3KggISB/B34nonBiZ29mMHhat7QUMLgQ9MBsZuzf8xj4s2AwJ14i2mAX1awEZP1xXJ67l+gX/CNBvjA8hEKbYVSXHXPXhbEnl0johlZhYohm3fquAFluCh8f5cKG8TBa9pdX87lb9+Ev1ZQu1s5lN5nVvDnEf5bVaAZdDu01j2kQN1mXchg=
-  - secure: oC9g2UfW2UVWURAgq5gXhS037xYqVWIGzu0I7o4MDOp7dadRi/7rFjBbQKjLi78qgw9I/MZWrLybiqV36K6VfIla3EQYF5LBTaKt++CdoaCQl72tpIpbXmaB2mKRMJZajE2slHEEajQu9ovcqZGjJDpwJHZwsL2mI0FRMNJVCFNzkKkt2oAUCxQNZTj8XHSSAgdmo+aFyk+XwPyo4BaNSw6vriLN+CdF/Z/Hsu2zsCkozuy5NNoE/L/+BadhzhLfOjQ50yFpKVklcO16udnvAHzfNpaxmILMvmVqw9ULqWu9XVpuyDNCf3AX2FDWgLE94GhbAAcLToxrYomDxFHGp+kv/f/W5WngAAdg4TjwXd4BU7fqqG8MSkj50JE6BnzmUyH95NXU2hGfZWsoKiGhLPF5QtlXHBPFxyWYxS/wGXcEhIqiyAum6D/rQ8NlyBHaVlxjVFLBncGhadiravspSELXHzujXujPujGWXazHEqYe0Gd9UKjDZVGwEQ9gwLZdp4H7zk7MEGtPsz6AkwF0XXfRgJUK6hNAqX6ewyUhlXjdQP4W2Esk8flbi4mdtEymfT5mxArZo0U85uWFotPAxtCbo2wA0H6E63qt4JfrW/MjsnQ7oz+JJ7hWpWZ/7w8EKd/MkLaGXg4bXMMiqBSv7G4i+fGYNNgOVcFKA9zMWFM=
+  - provider: script
+    skip_cleanup: true
+    script: bash scripts/version.sh
+    on:
+      branch: master
+      repo: smockle/xcode-default-theme
+      tags: false
+  - provider: script
+    skip_cleanup: true
+    script: bash scripts/publish.sh
+    on:
+      branch: master
+      repo: smockle/xcode-default-theme
+      tags: false
