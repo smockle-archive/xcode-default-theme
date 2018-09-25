@@ -4,8 +4,8 @@
     // white: borderless
     "list.focusForeground": "#FFFFFF",
     "scrollbar.shadow": "#ffffff00",
-    "tab.activeBorder": "#ffffff",
     "widget.shadow": "#ffffff00",
+    "tab.activeForeground": "#ffffff",
     // gray: borders
     "activityBar.border": "#D9D7D5",
     "editorGroup.border": "#D9D7D5",
@@ -28,6 +28,7 @@
     "editorWidget.background": "#F5F5F5",
     "sideBar.background": "#F5F5F5",
     "sideBarSectionHeader.background": "#F5F5F5",
+    "tab.inactiveBackground": "#F5F5F5",
     // black: icons
     "activityBarBadge.background": "#282828",
     "activityBar.foreground": "#282828",
@@ -50,6 +51,8 @@
     "list.focusBackground": "#3C93FD",
     "selection.background": "#B3D7FF",
     "list.inactiveSelectionBackground": "#CECECE",
+    "tab.activeBackground": "#4399FA",
+    "tab.activeBorder": "#4399FA",
     // terminal
     "terminal.ansiBlack": "#000000",
     "terminal.ansiBrightBlack": "#000000",
