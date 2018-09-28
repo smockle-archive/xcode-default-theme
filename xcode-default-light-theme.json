@@ -5,7 +5,6 @@
     "list.focusForeground": "#FFFFFF",
     "scrollbar.shadow": "#ffffff00",
     "widget.shadow": "#ffffff00",
-    "tab.activeForeground": "#ffffff",
     // gray: borders
     "activityBar.border": "#D9D7D5",
     "editorGroup.border": "#D9D7D5",
