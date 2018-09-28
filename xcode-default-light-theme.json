@@ -62,8 +62,8 @@
     "terminal.ansiBrightGreen": "#007400",
     "terminal.ansiYellow": "#643820",
     "terminal.ansiBrightYellow": "#643820",
-    "terminal.ansiBlue": "#1C00CF",
-    "terminal.ansiBrightBlue": "#1C00CF",
+    "terminal.ansiBlue": "#272AD8",
+    "terminal.ansiBrightBlue": "#272AD8",
     "terminal.ansiMagenta": "#AA0D91",
     "terminal.ansiBrightMagenta": "#AA0D91",
     "terminal.ansiCyan": "#3F6E74",
@@ -74,7 +74,7 @@
   "tokenColors": [
     {
       "scope": "new.expr entity.name",
-      "settings": { "foreground": "#5C2699" }
+      "settings": { "foreground": "#713DA9" }
     },
     {
       "name": "Comments",
@@ -82,7 +82,7 @@
         "comment", // //
         "comment storage.type" // /** @class */
       ],
-      "settings": { "foreground": "#536579" }
+      "settings": { "foreground": "#536579", "fontStyle": "italic" }
     },
     {
       "name": "CSS",
@@ -127,18 +127,17 @@
         "entity.name.function", // foo.x()
         "support.function" // Object.keys
       ],
-      "settings": { "foreground": "#2E0D6E" }
+      "settings": { "foreground": "#4B22B0" }
     },
     {
       "name": "Keys",
       "scope": [
-        "meta.object-literal.key", // { foo: _ }
         "meta.property-list meta.property-name", // .x { foo: "" }
         "support.type.property-name", // { foo: "" }
         "support.type.map.key", // (foo: $x)
         "entity.name.tag.yaml" // - foo
       ],
-      "settings": { "foreground": "#2E0D6E" }
+      "settings": { "foreground": "#4B22B0" }
     },
     {
       "name": "Keywords",
@@ -159,14 +158,13 @@
         "meta.tag support.class", // <jsx>
         "string.regexp keyword.other" // //g
       ],
-      "settings": { "foreground": "#AA0D91" }
+      "settings": { "foreground": "#AD3DA4", "fontStyle": "bold" }
     },
     {
       "name": "Operators",
       "scope": [
         "storage.type.function.arrow", // =>
         "meta.template.expression punctuation", // ` ${_._} `
-        "string.quoted punctuation.definition.variable", // "${SHELL_FOO}"
         "punctuation.separator.key-value",
         "meta.object-literal.key meta.brace.square", // { [foo]: x }
         "meta.template.expression keyword.operator", // ? :
@@ -191,7 +189,7 @@
         "keyword.other.unit",
         "constant.other.color"
       ],
-      "settings": { "foreground": "#1C00CF" }
+      "settings": { "foreground": "#272AD8" }
     },
     {
       "name": "Strings",
@@ -203,7 +201,7 @@
         "meta.template.expression meta.embedded punctuation.definition.string.begin", // { true ? "foo" : "foo" }
         "meta.template.expression meta.embedded punctuation.definition.string.end"
       ],
-      "settings": { "foreground": "#C41A16" }
+      "settings": { "foreground": "#D12F1B" }
     },
     {
       "name": "Types",
@@ -213,22 +211,13 @@
         "entity.name.type", // foo as Element
         "support.type.primitive" // foo as any
       ],
-      "settings": { "foreground": "#5C2699" }
+      "settings": { "foreground": "#713DA9" }
     },
     {
       "scope": [
-        "meta.block variable.other.readwrite", // var foo; foo
-        "meta.objectliteral variable.other.readwrite",
-        "meta.block variable.other.constant", // const foo; foo
-        "meta.objectliteral variable.other.constant",
-        "meta.block variable.other.object", // PropTypes
         "meta.objectliteral variable.other.object",
-        "meta.function-call entity.name.function", // foo()
         "entity.name.type.module", // React
         "entity.other.inherited-class", // React.Component
-        "support.constant", // JSON
-        "support.variable", // process
-        "support.class", // Object
         "variable.scss", // $foo
         "variable.other.bracket.shell", // "${SHELL_FOO}"
         "entity.name.function.scss" // @include foo
@@ -241,6 +230,8 @@
         "meta.import variable.other.readwrite", // import Foo from "foo"
         "meta.definition.variable variable.other.readwrite", // var foo
         "meta.definition.variable variable.other.constant", // const foo
+        "meta.template.expression variable.other.readwrite", // `${foo}`
+        "meta.template.expression variable.other.constant", // `${FOO}`
         "support.constant.property-value" // composes: bold from "_"
       ],
       "settings": { "foreground": "#000000" }
@@ -251,7 +242,7 @@
         "variable.other.object.property",
         "support.variable.property"
       ],
-      "settings": { "foreground": "#5C2699" }
+      "settings": { "foreground": "#713DA9" }
     }
   ]
 }
