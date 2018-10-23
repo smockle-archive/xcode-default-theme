@@ -4,6 +4,7 @@
     // white: borderless
     "list.focusForeground": "#FFFFFF",
     "scrollbar.shadow": "#ffffff00",
+    "tab.activeBorder": "#ffffff",
     "widget.shadow": "#ffffff00",
     // gray: borders
     "activityBar.border": "#D9D7D5",
@@ -50,8 +51,6 @@
     "list.focusBackground": "#3C93FD",
     "selection.background": "#B3D7FF",
     "list.inactiveSelectionBackground": "#CECECE",
-    "tab.activeBackground": "#4399FA",
-    "tab.activeBorder": "#4399FA",
     // terminal
     "terminal.ansiBlack": "#000000",
     "terminal.ansiBrightBlack": "#000000",
