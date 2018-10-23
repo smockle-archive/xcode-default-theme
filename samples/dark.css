@@ -1,0 +1,59 @@
+.plain-text {
+  color: #ffffff
+}
+.comments {
+  color: #7f8c99
+}
+.documentation-markup {
+  color: #7f8c98
+}
+.documentation-markup-keywords {
+  color: #a3b1bf
+}
+.strings {
+  color: #ff816f
+}
+.characters {
+  color: #a79df7
+}
+.numbers {
+  color: #a79df8
+}
+.keywords {
+  color: #ff7ab2
+}
+.preprocessor-statements {
+  color: #ffa150
+}
+.urls {
+  color: #63b6fc
+}
+.attributes {
+  color: #86bfa3
+}
+.project-class-names {
+  color: #a1d875
+}
+.project-function-and-method-names,
+.project-constants {
+  color: #baf190
+}
+.project-type-names,
+.project-instance-variables-and-globals {
+  color: #9fd975
+}
+.project-preprocessor-macros,
+.other-preprocessor-macros {
+  color: #ffa14e
+}
+.other-class-names {
+  color: #8bd0c3
+}
+.other-function-and-method-names,
+.other-constants {
+  color: #a7ebdd
+}
+.other-type-names,
+.other-instance-variables-and-globals {
+  color: #8ad1c3
+}
