@@ -48,6 +48,7 @@
     "sideBarSectionHeader.foreground": "#FFFFFF",
     "tab.activeForeground": "#FFFFFF",
     "panelTitle.inactiveForeground": "#FFFFFF",
+    "list.highlightForeground": "#FFFFFF",
     // blue: accents, highlights, focus
     "editor.lineHighlightBackground": "#2F3239",
     "editor.selectionBackground": "#3D4752",
