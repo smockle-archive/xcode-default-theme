@@ -27,7 +27,19 @@
                 "label": "Xcode Default (Light)",
                 "uiTheme": "vs",
                 "path": "./xcode-default-light-theme.json"
-            }
+						},
+						{
+							"id": "Xcode Partial (Dark)",
+							"label": "Xcode Partial (Dark)",
+							"uiTheme": "vs-dark",
+							"path": "./xcode-partial-dark-theme.json"
+						},
+						{
+							"id": "Xcode Partial (Light)",
+							"label": "Xcode Partial (Light)",
+							"uiTheme": "vs",
+							"path": "./xcode-partial-light-theme.json"
+						}
         ]
     }
 }
