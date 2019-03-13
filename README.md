@@ -2,36 +2,74 @@
 
 [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/smockle.xcode-default-theme.svg)](https://marketplace.visualstudio.com/items?itemName=smockle.xcode-default-theme)
 
-Brings the colors of the Xcode 'Default (Dark)' and 'Default (Light)' themes to Visual Studio Code
+Brings the colors of the Xcode 'Default (Dark)' and 'Default (Light)' themes to Visual Studio Code.
 
-![Screenshot (Dark)](/default-dark.png?raw=true "Screenshot (Dark)")
-![Screenshot (Light)](/default-light.png?raw=true "Screenshot (Light)")
+## Xcode Default
 
-## Installation
+Matches the default window and syntax colors of Xcode.
 
-1.  Install the [“Titlebar-Less VSCode on macOS” extension](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-titlebar-less-macos)
+![Xcode Default (Dark) Screenshot](/default-dark.png?raw=true "Xcode Default (Dark) Screenshot")
+![Xcode Default (Light) Screenshot](/default-light.png?raw=true "Xcode Default (Light) Screenshot")
 
-2.  Install [this extension](https://marketplace.visualstudio.com/items?itemName=smockle.xcode-default-theme).
+## Xcode Partial
 
-3.  Add the following lines to your `settings.json`:
+Matches the default window colors of Xcode and the default syntax colors of Visual Studio Code (with adapted saturation).
+
+![Xcode Partial (Dark) Screenshot](/partial-dark.png?raw=true "Xcode Partial (Dark) Screenshot")
+![Xcode Partial (Light) Screenshot](/partial-light.png?raw=true "Xcode Partial (Light) Screenshot")
+
+# Recommended Settings
+
+For a more complete theme, add the following lines to your `settings.json`:
 
 ```JSON
 {
   "editor.cursorStyle": "line-thin",
   "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "editor.fontSize": 12,
+  "editor.fontWeight": "500",
   "editor.lineHeight": 17,
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.lineHeight": 1.23,
   "editor.minimap.enabled": false,
+  "editor.minimap.renderCharacters": false,
   "editor.overviewRulerBorder": false,
   "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "all",
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "left",
-  "workbench.editor.tabSizing": "shrink",
   "workbench.editor.showIcons": false,
-  "window.nativeTabs": false,
-  "window.titleBarStyle": "custom"
+  "window.nativeTabs": true,
+  "editor.tokenColorCustomizations": {
+    "[Xcode Partial (Light)]": {
+      "textMateRules": [
+        {
+          "scope": "comment",
+          "settings": {
+            "foreground": "#536579",
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    },
+    "[Xcode Partial (Dark)]": {
+      "textMateRules": [
+        {
+          "scope": "source",
+          "settings": {
+            "foreground": "#D4D4D4"
+          }
+        },
+        {
+          "scope": "comment",
+          "settings": {
+            "foreground": "#6C7986",
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    }
+  }
 }
 ```
