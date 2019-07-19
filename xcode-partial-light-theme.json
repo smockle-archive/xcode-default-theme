@@ -59,9 +59,7 @@
     "terminal.ansiMagenta": "#AA0D91",
     "terminal.ansiBrightMagenta": "#AA0D91",
     "terminal.ansiCyan": "#3F6E74",
-    "terminal.ansiBrightCyan": "#3F6E74",
-    "terminal.ansiWhite": "#FFFFFF",
-    "terminal.ansiBrightWhite": "#FFFFFF"
+    "terminal.ansiBrightCyan": "#3F6E74"
   },
   "tokenColors": [
     {
