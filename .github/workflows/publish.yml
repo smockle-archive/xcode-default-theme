@@ -30,6 +30,4 @@ jobs:
         if: contains(github.event.commits[0].message, '[skip ci]') == false
         uses: "lannonbr/vsce-action@75a30e358888a882724b568c7fcc80d7f087906c"
         with:
-          args: "publish -p $VSCE_ACCESS_TOKEN"
-        env:
-          VSCE_ACCESS_TOKEN: ${{ secrets.VSCE_ACCESS_TOKEN }}
+          args: publish -p ${{ secrets.VSCE_ACCESS_TOKEN }}
