@@ -1,12 +1,6 @@
 #!/usr/bin/env bash
 # Adapted from https://dev.to/jeffreymfarley/deploy-atomically-with-travis--npm-68b
-
-# Abort if any command exits with error.
-set -e
-
-# By default, Bash takes the error status of the last item in pipeline.
-# Instead, exit when any item in the pipeline fails.
-set -o pipefail
+set -eo pipefail
 
 setup_git() {
   # Set the user name and email to match the API token holder
@@ -40,7 +34,7 @@ make_version() {
 
 upload_files() {
   # This make sure the current work area is pushed to the tip of the current branch
-  git push origin HEAD:$TRAVIS_BRANCH
+  git push origin HEAD:"${GITHUB_REF}"
   
   # This pushes the new tag
   git push --tags

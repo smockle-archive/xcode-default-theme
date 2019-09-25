@@ -8,4 +8,4 @@ set -e
 set -o pipefail
 
 # This associates the API Key with the account
-vsce publish -p "${VSTS_ACCESS_TOKEN}"
+vsce publish -p "${VSCE_ACCESS_TOKEN}"
