@@ -22,8 +22,10 @@ jobs:
 
       - name: Bump version
         if: contains(github.event.commits[0].message, '[skip ci]') == false
-        run: bash script/version.sh
+        uses: "smockle/version-action@master"
         env:
+          GITHUB_USER_EMAIL: bot@smockle.com
+          GITHUB_USER_NAME: smockle-bot
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
 
       - name: Publish
